@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/matildepulidori/CLionProjects/Laboratori2020/Laboratorio1-2020/Message.h
+cstring
+-
+string
+-
+iostream
+-
+utility
+-
+
+/Users/matildepulidori/CLionProjects/Laboratori2020/Laboratorio1-2020/MessageStore.cpp
+MessageStore.h
+/Users/matildepulidori/CLionProjects/Laboratori2020/Laboratorio1-2020/MessageStore.h
+Message.h
+/Users/matildepulidori/CLionProjects/Laboratori2020/Laboratorio1-2020/Message.h
+Utils.h
+/Users/matildepulidori/CLionProjects/Laboratori2020/Laboratorio1-2020/Utils.h
+iostream
+-
+
+/Users/matildepulidori/CLionProjects/Laboratori2020/Laboratorio1-2020/MessageStore.h
+optional
+-
+Message.h
+/Users/matildepulidori/CLionProjects/Laboratori2020/Laboratorio1-2020/Message.h
+
+/Users/matildepulidori/CLionProjects/Laboratori2020/Laboratorio1-2020/Utils.h
+iostream
+-
+Message.h
+/Users/matildepulidori/CLionProjects/Laboratori2020/Laboratorio1-2020/Message.h
+
