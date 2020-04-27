@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/matildepulidori/CLionProjects/Laboratori2020/Laboratorio2-2020/Base.h
+string
+-
+iostream
+-
+
+/Users/matildepulidori/CLionProjects/Laboratori2020/Laboratorio2-2020/Directory.cpp
+Directory.h
+/Users/matildepulidori/CLionProjects/Laboratori2020/Laboratorio2-2020/Directory.h
+
+/Users/matildepulidori/CLionProjects/Laboratori2020/Laboratorio2-2020/Directory.h
+string
+-
+vector
+-
+Base.h
+/Users/matildepulidori/CLionProjects/Laboratori2020/Laboratorio2-2020/Base.h
+
