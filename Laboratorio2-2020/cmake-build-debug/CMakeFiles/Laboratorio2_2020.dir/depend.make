@@ -7,8 +7,14 @@ CMakeFiles/Laboratorio2_2020.dir/Base.cpp.o: ../Base.h
 CMakeFiles/Laboratorio2_2020.dir/Directory.cpp.o: ../Base.h
 CMakeFiles/Laboratorio2_2020.dir/Directory.cpp.o: ../Directory.cpp
 CMakeFiles/Laboratorio2_2020.dir/Directory.cpp.o: ../Directory.h
+CMakeFiles/Laboratorio2_2020.dir/Directory.cpp.o: ../File.h
+
+CMakeFiles/Laboratorio2_2020.dir/File.cpp.o: ../Base.h
+CMakeFiles/Laboratorio2_2020.dir/File.cpp.o: ../File.cpp
+CMakeFiles/Laboratorio2_2020.dir/File.cpp.o: ../File.h
 
 CMakeFiles/Laboratorio2_2020.dir/main.cpp.o: ../Base.h
 CMakeFiles/Laboratorio2_2020.dir/main.cpp.o: ../Directory.h
+CMakeFiles/Laboratorio2_2020.dir/main.cpp.o: ../File.h
 CMakeFiles/Laboratorio2_2020.dir/main.cpp.o: ../main.cpp
 

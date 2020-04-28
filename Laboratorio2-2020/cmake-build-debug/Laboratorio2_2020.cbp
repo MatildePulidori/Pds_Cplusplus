@@ -92,6 +92,12 @@
 		<Unit filename="/Users/matildepulidori/CLionProjects/Laboratori2020/Laboratorio2-2020/Directory.h">
 			<Option target="Laboratorio2_2020"/>
 		</Unit>
+		<Unit filename="/Users/matildepulidori/CLionProjects/Laboratori2020/Laboratorio2-2020/File.cpp">
+			<Option target="Laboratorio2_2020"/>
+		</Unit>
+		<Unit filename="/Users/matildepulidori/CLionProjects/Laboratori2020/Laboratorio2-2020/File.h">
+			<Option target="Laboratorio2_2020"/>
+		</Unit>
 		<Unit filename="/Users/matildepulidori/CLionProjects/Laboratori2020/Laboratorio2-2020/main.cpp">
 			<Option target="Laboratorio2_2020"/>
 		</Unit>

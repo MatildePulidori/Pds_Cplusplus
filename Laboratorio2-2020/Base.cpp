@@ -8,13 +8,13 @@
 
 
 Base::Base(std::string name) : name(name){
-    std::cout<<"Costruttore Base: "<<name<<", @"<<std::hex<<this<<std::endl;
+    //std::cout<<"Costruttore Base: "<<name<<", @"<<std::hex<<this<<std::endl;
 }
 
 Base::~Base() {
-    std::cout<<"Distruttore Base: "<<name<<", @"<<std::hex<<this<<std::endl;
+    //std::cout<<"Distruttore Base: "<<name<<", @"<<std::hex<<this<<std::endl;
 }
 
-std::string Base::getName() {
+std::string Base::getName() const{
     return this->name;
 }

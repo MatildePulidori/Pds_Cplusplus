@@ -17,7 +17,7 @@ protected:
 public:
 
     ~Base();
-    std::string getName();
+    std::string getName() const;
     virtual int getType() const= 0;
     virtual void ls(int indent=0) const = 0;
 

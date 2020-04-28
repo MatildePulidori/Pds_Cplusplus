@@ -9,6 +9,7 @@
 #include <string>
 #include <vector>
 #include "Base.h"
+#include "File.h"
 
 class Directory: public Base{
 
@@ -29,9 +30,12 @@ public:
     static std::shared_ptr<Directory> makeDir(std::string nome, std::weak_ptr<Directory> parent);
 
     void ls(int indent) const override;
-    std::shared_ptr<Base> get(std::string nome);
+    std::shared_ptr<Base> get(std::string name);
+    std::shared_ptr<Directory> getDir(std::string name);
+    std::shared_ptr<File> getFile(std::string name);
 
-    std::shared_ptr<Directory> addDirectory(std::string nome);
+    std::shared_ptr<Directory> addDirectory(std::string name);
+    std::shared_ptr<File> addFile(std::string name, uintmax_t size);
 
 };
 
