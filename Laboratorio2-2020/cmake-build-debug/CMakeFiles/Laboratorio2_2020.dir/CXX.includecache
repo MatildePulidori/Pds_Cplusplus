@@ -6,15 +6,29 @@
 
 #IncludeRegexTransform: 
 
-/Users/matildepulidori/CLionProjects/Laboratori2020/Laboratorio2-2020/Base.cpp
-string
--
-Base.h
-/Users/matildepulidori/CLionProjects/Laboratori2020/Laboratorio2-2020/Base.h
-
 /Users/matildepulidori/CLionProjects/Laboratori2020/Laboratorio2-2020/Base.h
 string
 -
 iostream
 -
+
+/Users/matildepulidori/CLionProjects/Laboratori2020/Laboratorio2-2020/Directory.h
+string
+-
+vector
+-
+Base.h
+/Users/matildepulidori/CLionProjects/Laboratori2020/Laboratorio2-2020/Base.h
+File.h
+/Users/matildepulidori/CLionProjects/Laboratori2020/Laboratorio2-2020/File.h
+
+/Users/matildepulidori/CLionProjects/Laboratori2020/Laboratorio2-2020/File.h
+Base.h
+/Users/matildepulidori/CLionProjects/Laboratori2020/Laboratorio2-2020/Base.h
+
+/Users/matildepulidori/CLionProjects/Laboratori2020/Laboratorio2-2020/main.cpp
+iostream
+-
+Directory.h
+/Users/matildepulidori/CLionProjects/Laboratori2020/Laboratorio2-2020/Directory.h
 

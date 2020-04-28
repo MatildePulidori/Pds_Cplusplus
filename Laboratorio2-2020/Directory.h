@@ -36,6 +36,7 @@ public:
 
     std::shared_ptr<Directory> addDirectory(std::string name);
     std::shared_ptr<File> addFile(std::string name, uintmax_t size);
+    bool remove(std::string name);
 
 };
 

@@ -152,3 +152,19 @@ std::shared_ptr<File> Directory::addFile(std::string name, uintmax_t size) {
 
 
 }
+
+
+bool Directory::remove(std::string name) {
+    if (name.compare("..") == 0 || name.compare(".") == 0){
+        return false;
+    }
+
+    for(auto it = std::begin(files); it!= std::end(files); it++){
+        if ((*it)->getName().compare(name)==0) {
+            this->files.erase(it);
+            return true;
+        }
+    }
+    return false;
+
+}
