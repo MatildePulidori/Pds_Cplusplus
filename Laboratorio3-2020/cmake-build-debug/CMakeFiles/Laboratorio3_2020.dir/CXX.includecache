@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/matildepulidori/CLionProjects/Laboratori2020/Laboratorio3-2020/ReducerInputT.cpp
+vector
+-
+iomanip
+-
+sstream
+-
+ios
+-
+ReducerInputT.h
+/Users/matildepulidori/CLionProjects/Laboratori2020/Laboratorio3-2020/ReducerInputT.h
+
+/Users/matildepulidori/CLionProjects/Laboratori2020/Laboratorio3-2020/ReducerInputT.h
+string
+-
+
