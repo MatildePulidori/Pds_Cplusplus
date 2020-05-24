@@ -16,14 +16,12 @@ private:
 
 public:
     ResultT();
-    ResultT(std::string key, int value );
-
-    const std::string &getKey() const;
-
+    explicit ResultT(std::string key, int value );
+    std::string getKey() const;
     int getValue() const;
 
-
-
+    std::vector<char> serialize();
+    void deserialize(std::vector<char> buff);
 };
 
 

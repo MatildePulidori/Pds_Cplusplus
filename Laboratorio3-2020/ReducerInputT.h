@@ -15,19 +15,19 @@ private:
     int accum;
 
 public:
-    ReducerInputT(const std::string key, int value, int accum);
+    ReducerInputT(std::string key, int value, int accum);
+    ~ReducerInputT();
 
-    const std::string getKey() const;
+    std::string getKey() const ;
 
-    int getValue() const;
+    int getValue() const ;
 
     int getAccum() const;
 
-    std::vector<char> serialize() const;
+    std::vector<char> serialize();
+    void deserialize(std::vector<char> buff);
 
-    void deserialize(std::vector<char*> vector);
 
 };
-
 
 #endif //LABORATORIO3_2020_REDUCERINPUTT_H

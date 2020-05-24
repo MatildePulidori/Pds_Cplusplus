@@ -1,9 +1,9 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Laboratorio3_2020.dir/Coordinator.cpp.o"
+  "CMakeFiles/Laboratorio3_2020.dir/DriverInputT.cpp.o"
   "CMakeFiles/Laboratorio3_2020.dir/MapperInputT.cpp.o"
   "CMakeFiles/Laboratorio3_2020.dir/ReducerInputT.cpp.o"
   "CMakeFiles/Laboratorio3_2020.dir/ResultT.cpp.o"
-  "CMakeFiles/Laboratorio3_2020.dir/Serializer.cpp.o"
   "CMakeFiles/Laboratorio3_2020.dir/main.cpp.o"
   "Laboratorio3_2020"
   "Laboratorio3_2020.pdb"

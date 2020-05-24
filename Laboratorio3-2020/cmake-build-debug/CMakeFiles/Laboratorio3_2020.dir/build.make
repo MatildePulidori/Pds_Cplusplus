@@ -70,18 +70,18 @@ CMakeFiles/Laboratorio3_2020.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Laboratorio3_2020.dir/main.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/matildepulidori/CLionProjects/Laboratori2020/Laboratorio3-2020/main.cpp -o CMakeFiles/Laboratorio3_2020.dir/main.cpp.s
 
-CMakeFiles/Laboratorio3_2020.dir/Serializer.cpp.o: CMakeFiles/Laboratorio3_2020.dir/flags.make
-CMakeFiles/Laboratorio3_2020.dir/Serializer.cpp.o: ../Serializer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/matildepulidori/CLionProjects/Laboratori2020/Laboratorio3-2020/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Laboratorio3_2020.dir/Serializer.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Laboratorio3_2020.dir/Serializer.cpp.o -c /Users/matildepulidori/CLionProjects/Laboratori2020/Laboratorio3-2020/Serializer.cpp
+CMakeFiles/Laboratorio3_2020.dir/DriverInputT.cpp.o: CMakeFiles/Laboratorio3_2020.dir/flags.make
+CMakeFiles/Laboratorio3_2020.dir/DriverInputT.cpp.o: ../DriverInputT.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/matildepulidori/CLionProjects/Laboratori2020/Laboratorio3-2020/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Laboratorio3_2020.dir/DriverInputT.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Laboratorio3_2020.dir/DriverInputT.cpp.o -c /Users/matildepulidori/CLionProjects/Laboratori2020/Laboratorio3-2020/DriverInputT.cpp
 
-CMakeFiles/Laboratorio3_2020.dir/Serializer.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Laboratorio3_2020.dir/Serializer.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/matildepulidori/CLionProjects/Laboratori2020/Laboratorio3-2020/Serializer.cpp > CMakeFiles/Laboratorio3_2020.dir/Serializer.cpp.i
+CMakeFiles/Laboratorio3_2020.dir/DriverInputT.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Laboratorio3_2020.dir/DriverInputT.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/matildepulidori/CLionProjects/Laboratori2020/Laboratorio3-2020/DriverInputT.cpp > CMakeFiles/Laboratorio3_2020.dir/DriverInputT.cpp.i
 
-CMakeFiles/Laboratorio3_2020.dir/Serializer.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Laboratorio3_2020.dir/Serializer.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/matildepulidori/CLionProjects/Laboratori2020/Laboratorio3-2020/Serializer.cpp -o CMakeFiles/Laboratorio3_2020.dir/Serializer.cpp.s
+CMakeFiles/Laboratorio3_2020.dir/DriverInputT.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Laboratorio3_2020.dir/DriverInputT.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/matildepulidori/CLionProjects/Laboratori2020/Laboratorio3-2020/DriverInputT.cpp -o CMakeFiles/Laboratorio3_2020.dir/DriverInputT.cpp.s
 
 CMakeFiles/Laboratorio3_2020.dir/MapperInputT.cpp.o: CMakeFiles/Laboratorio3_2020.dir/flags.make
 CMakeFiles/Laboratorio3_2020.dir/MapperInputT.cpp.o: ../MapperInputT.cpp
@@ -138,7 +138,7 @@ CMakeFiles/Laboratorio3_2020.dir/ResultT.cpp.s: cmake_force
 # Object files for target Laboratorio3_2020
 Laboratorio3_2020_OBJECTS = \
 "CMakeFiles/Laboratorio3_2020.dir/main.cpp.o" \
-"CMakeFiles/Laboratorio3_2020.dir/Serializer.cpp.o" \
+"CMakeFiles/Laboratorio3_2020.dir/DriverInputT.cpp.o" \
 "CMakeFiles/Laboratorio3_2020.dir/MapperInputT.cpp.o" \
 "CMakeFiles/Laboratorio3_2020.dir/Coordinator.cpp.o" \
 "CMakeFiles/Laboratorio3_2020.dir/ReducerInputT.cpp.o" \
@@ -148,12 +148,14 @@ Laboratorio3_2020_OBJECTS = \
 Laboratorio3_2020_EXTERNAL_OBJECTS =
 
 Laboratorio3_2020: CMakeFiles/Laboratorio3_2020.dir/main.cpp.o
-Laboratorio3_2020: CMakeFiles/Laboratorio3_2020.dir/Serializer.cpp.o
+Laboratorio3_2020: CMakeFiles/Laboratorio3_2020.dir/DriverInputT.cpp.o
 Laboratorio3_2020: CMakeFiles/Laboratorio3_2020.dir/MapperInputT.cpp.o
 Laboratorio3_2020: CMakeFiles/Laboratorio3_2020.dir/Coordinator.cpp.o
 Laboratorio3_2020: CMakeFiles/Laboratorio3_2020.dir/ReducerInputT.cpp.o
 Laboratorio3_2020: CMakeFiles/Laboratorio3_2020.dir/ResultT.cpp.o
 Laboratorio3_2020: CMakeFiles/Laboratorio3_2020.dir/build.make
+Laboratorio3_2020: /usr/local/lib/libboost_system-mt.dylib
+Laboratorio3_2020: /usr/local/lib/libboost_filesystem-mt.dylib
 Laboratorio3_2020: CMakeFiles/Laboratorio3_2020.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/matildepulidori/CLionProjects/Laboratori2020/Laboratorio3-2020/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable Laboratorio3_2020"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Laboratorio3_2020.dir/link.txt --verbose=$(VERBOSE)

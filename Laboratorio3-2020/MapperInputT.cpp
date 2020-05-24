@@ -4,21 +4,26 @@
 
 #include <fstream>
 #include <sstream>
+#include <regex>
 #include "MapperInputT.h"
 
-MapperInputT::MapperInputT(std::string line): line(line) {
-    this->parser(line);
+MapperInputT::MapperInputT(std::string line): line(std::move(line)) {
+    this->parser(this->line);
+    this->serialize();
 }
+
+MapperInputT::~MapperInputT() = default;
 
 void MapperInputT::parser(std::string line){
 
     std::stringstream stringstream(line);
-    std::string w;
+    std::string word;
+    std::getline(stringstream, word, ' '); // ip_
+    std::smatch w;
+    std::regex_search(word, w, std::regex("^(?:[0-9]{1,3}\\.){3}[0-9]{1,3}"));
+    this->ip=w[0];
 
-    std::getline(stringstream, w, ' '); // ip_
-    this->ip = w;
-
-    std::getline(stringstream, w, ' '); // -_
+    /*std::getline(stringstream, w, ' '); // -_
     std::getline(stringstream, w, ' '); // -_
 
     std::getline(stringstream, w, ' '); // [data:ora_
@@ -37,36 +42,41 @@ void MapperInputT::parser(std::string line){
     std::getline(stringstream, w, '"'); // HTTP/1.1"
     std::getline(stringstream, w, ' '); // _
     std::getline(stringstream, w, ' '); // <CODE>_
-    this->code = w;
+    this->code = w;*/
 }
 
-const std::string MapperInputT::getLine() const {
+std::string MapperInputT::getLine() const {
     return line;
 }
 
-const std::string MapperInputT::getIp() const {
+std::string MapperInputT::getIp() const {
     return ip;
 }
 
-const std::string MapperInputT::getTime() const {
+std::string MapperInputT::getTime() const {
     return time;
 }
 
-const std::string MapperInputT::getMethod() const {
+std::string MapperInputT::getMethod() const {
     return method;
 }
 
-const std::string MapperInputT::getCode() const {
+std::string MapperInputT::getCode() const {
     return code;
 }
 
+std::vector<char> MapperInputT::serialize() {
 
-/*std::vector<char> MapperInputT::serialize() const {
-    std::vector<char> serialized;
+    ushort size = sizeof(std::string);
+    std::vector<char> buff(size+ sizeof(ushort));
+    std::copy((char*)&size, (char*)&size + sizeof(ushort), buff.begin());
+    std::copy((char*)&ip, (char*)&ip + size, buff.begin()+ sizeof(ushort));
 
-    return serialized;
+    return buff;
 }
 
-void MapperInputT::deserialize(std::vector<char *> vector) {
+void MapperInputT::deserialize(std::vector<char> buff) {
+    std::copy(buff.begin()+ sizeof(ushort), buff.begin()+sizeof(std::string), (char*)&this->ip);
+}
 
-}*/
+

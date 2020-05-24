@@ -150,6 +150,33 @@ Coordinator.cpp.s:
 	$(MAKE) -f CMakeFiles/Laboratorio3_2020.dir/build.make CMakeFiles/Laboratorio3_2020.dir/Coordinator.cpp.s
 .PHONY : Coordinator.cpp.s
 
+DriverInputT.o: DriverInputT.cpp.o
+
+.PHONY : DriverInputT.o
+
+# target to build an object file
+DriverInputT.cpp.o:
+	$(MAKE) -f CMakeFiles/Laboratorio3_2020.dir/build.make CMakeFiles/Laboratorio3_2020.dir/DriverInputT.cpp.o
+.PHONY : DriverInputT.cpp.o
+
+DriverInputT.i: DriverInputT.cpp.i
+
+.PHONY : DriverInputT.i
+
+# target to preprocess a source file
+DriverInputT.cpp.i:
+	$(MAKE) -f CMakeFiles/Laboratorio3_2020.dir/build.make CMakeFiles/Laboratorio3_2020.dir/DriverInputT.cpp.i
+.PHONY : DriverInputT.cpp.i
+
+DriverInputT.s: DriverInputT.cpp.s
+
+.PHONY : DriverInputT.s
+
+# target to generate assembly for a file
+DriverInputT.cpp.s:
+	$(MAKE) -f CMakeFiles/Laboratorio3_2020.dir/build.make CMakeFiles/Laboratorio3_2020.dir/DriverInputT.cpp.s
+.PHONY : DriverInputT.cpp.s
+
 MapperInputT.o: MapperInputT.cpp.o
 
 .PHONY : MapperInputT.o
@@ -231,33 +258,6 @@ ResultT.cpp.s:
 	$(MAKE) -f CMakeFiles/Laboratorio3_2020.dir/build.make CMakeFiles/Laboratorio3_2020.dir/ResultT.cpp.s
 .PHONY : ResultT.cpp.s
 
-Serializer.o: Serializer.cpp.o
-
-.PHONY : Serializer.o
-
-# target to build an object file
-Serializer.cpp.o:
-	$(MAKE) -f CMakeFiles/Laboratorio3_2020.dir/build.make CMakeFiles/Laboratorio3_2020.dir/Serializer.cpp.o
-.PHONY : Serializer.cpp.o
-
-Serializer.i: Serializer.cpp.i
-
-.PHONY : Serializer.i
-
-# target to preprocess a source file
-Serializer.cpp.i:
-	$(MAKE) -f CMakeFiles/Laboratorio3_2020.dir/build.make CMakeFiles/Laboratorio3_2020.dir/Serializer.cpp.i
-.PHONY : Serializer.cpp.i
-
-Serializer.s: Serializer.cpp.s
-
-.PHONY : Serializer.s
-
-# target to generate assembly for a file
-Serializer.cpp.s:
-	$(MAKE) -f CMakeFiles/Laboratorio3_2020.dir/build.make CMakeFiles/Laboratorio3_2020.dir/Serializer.cpp.s
-.PHONY : Serializer.cpp.s
-
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -297,6 +297,9 @@ help:
 	@echo "... Coordinator.o"
 	@echo "... Coordinator.i"
 	@echo "... Coordinator.s"
+	@echo "... DriverInputT.o"
+	@echo "... DriverInputT.i"
+	@echo "... DriverInputT.s"
 	@echo "... MapperInputT.o"
 	@echo "... MapperInputT.i"
 	@echo "... MapperInputT.s"
@@ -306,9 +309,6 @@ help:
 	@echo "... ResultT.o"
 	@echo "... ResultT.i"
 	@echo "... ResultT.s"
-	@echo "... Serializer.o"
-	@echo "... Serializer.i"
-	@echo "... Serializer.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

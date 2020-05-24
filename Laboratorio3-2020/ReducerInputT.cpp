@@ -2,6 +2,7 @@
 // Created by Matilde Pulidori on 18/05/2020.
 //
 
+#include <utility>
 #include <vector>
 #include <iomanip>
 #include <sstream>
@@ -10,36 +11,46 @@
 
 #define MAX_DIM 8
 
-ReducerInputT::ReducerInputT(const std::string key, int value, int accum) : key(key), value(value), accum(accum) {
+ReducerInputT::ReducerInputT(std::string key, int value, int accum) : key(std::move(key)), value(value), accum(accum) {
+    this->serialize();
 }
 
-const std::string &ReducerInputT::getKey() const {
+ReducerInputT::~ReducerInputT()= default;
+
+std::string ReducerInputT::getKey() const{
     return key;
 }
 
-int ReducerInputT::getValue() const {
+int ReducerInputT::getValue() const{
     return value;
 }
 
 
-int ReducerInputT::getAccum() const {
+int ReducerInputT::getAccum() const{
     return accum;
 }
 
-std::vector<char> ReducerInputT::serialize() const {
+std::vector<char> ReducerInputT::serialize() {
 
-    std::vector<char> serialized;
+    ushort sizeInt = sizeof(int);
+    ushort sizeString = sizeof(std::string);
+    std::vector<char> buff(3* sizeof(ushort) + sizeString + 2*sizeInt);
 
-    for(int i=0, n=sizeof(this); i< MAX_DIM, n>0; i++, n=n/2) {
-        serialized.push_back(n % 2);
-    }
+    std::copy((char*)&sizeString, (char*)&sizeString + sizeof(ushort), buff.begin()); // key dimension
+    std::copy((char*)&this->key, (char*)&this->key + sizeString, buff.begin()+ sizeof(ushort)); // key
+    std::copy((char*)&sizeInt, (char*)&sizeInt + sizeof(ushort), buff.begin()+sizeof(ushort)+sizeString); // value dimension
+    std::copy((char*)&value, (char*)&value + sizeof(int), buff.begin()+sizeof(ushort)+sizeString+ sizeof(ushort)); //value
 
-    serialized.push_back( std::for_each(this->getKey().begin(), this->getKey().end(), this->getKey().));
+    std::copy((char*)&sizeInt, (char*)&sizeInt + sizeof(ushort), buff.begin()+sizeof(ushort)+sizeString+sizeof(ushort)+sizeInt); // value dimension
+    std::copy((char*)&value, (char*)&value + sizeof(int), buff.begin()+sizeof(ushort)+sizeString+ 2*sizeof(ushort)+sizeInt); //value
 
+    buff.shrink_to_fit();
 
-    return serialized;
+    return buff;
 }
 
-void ReducerInputT::deserialize(std::vector<char *> vector) {
-
+void ReducerInputT::deserialize(std::vector<char> buff) {
+   // std::copy(buff.begin()+ sizeof(ushort), buff.begin()+sizeof(std::string), (char*)&this->);
 }
+
+

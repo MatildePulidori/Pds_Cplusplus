@@ -9,6 +9,7 @@
 #include <vector>
 #include "ResultT.h"
 
+
 class MapperInputT{ // public Serializer<MapperInputT> {
 private:
     std::string line;
@@ -23,20 +24,22 @@ private:
 
 public:
     MapperInputT(std::string line);
+    ~MapperInputT();
 
-    const std::string getLine() const;
+    std::string getLine() const ;
 
-    const std::string getIp() const;
+    std::string getIp() const ;
 
-    const std::string getTime() const;
+    std::string getTime() const;
 
-    const std::string getMethod() const;
+    std::string getMethod() const ;
 
-    const std::string getCode() const;
+    std::string getCode() const;
 
-    std::vector<char> serialize() const;
+    std::vector<char> serialize();
 
-    void deserialize(std::vector<char*> vector);
+    void deserialize(std::vector<char> buff);
+
 };
 
 

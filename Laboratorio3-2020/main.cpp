@@ -2,50 +2,60 @@
 #include <fstream>
 #include <map>
 #include <sstream>
+#include <boost/property_tree/ptree.hpp>
+#include <boost/property_tree/xml_parser.hpp>
+#include <boost/foreach.hpp>
+#include <string>
+#include <set>
+#include <exception>
+#include <iostream>
+#include <regex>
 #include "MapperInputT.h"
 #include "ReducerInputT.h"
-
-
-template<class ReducerInputT, class ResultT>
-auto reduce = [](const ReducerInputT &input){
-    int new_value = input.getValue() + input.getAccum();
-    return ResultT(input.getKey(), new_value);
-};
+#include "DriverInputT.h"
 
 
 template <class MapperInputT, class ResultT>
-auto mapIp = [](const MapperInputT& input){
+auto mapIp(const MapperInputT& input){
     std::vector<ResultT> results;
     results.push_back( ResultT(input.getIp(), 1) );
     return results;
 };
 
 template <class MapperInputT, class ResultT>
-auto mapTime = [](const MapperInputT &input) {
+auto mapTime (MapperInputT &input) {
     std::vector<ResultT> results;
     results.push_back(ResultT(input.getTime(), 1));
     return results;
 };
 
 template <class MapperInputT, class ResultT>
-auto mapMethod = [](const MapperInputT& input) {
+auto mapMethod (MapperInputT& input) {
     std::vector<ResultT> results;
     results.push_back(ResultT(input.getMethod(), 1));
     return results;
 };
 
 template <class MapperInputT, class ResultT>
-auto  mapCode = [](const MapperInputT& input) {
+auto  mapCode (MapperInputT& input) {
     std::vector<ResultT> results;
     results.push_back( ResultT(input.getCode(), 1) );
     return results;
 };
 
-std::map<std::string, ResultT> mapreduce(std::string basicString, std::vector<ResultT>(*mapIp) (const MapperInputT& mapper),ResultT(*reduce) (const ReducerInputT& reducer));
+template<class ReducerInputT, class ResultT>
+auto reduce (const ReducerInputT &input){
+    int new_value = input.getValue() + input.getAccum();
+    return ResultT(input.getKey(), new_value);
+};
+
+
+
+
 
 int main(int argc, char * argv[]) {
 
-    std::string test = "209.17.96.34 - - [01/Jan/2020:00:19:59 +0100] \"GET / HTTP/1.1\" 200 \n"
+    /*std::string test = "209.17.96.34 - - [01/Jan/2020:00:19:59 +0100] \"GET / HTTP/1.1\" 200 \n"
                        "120.29.52.229 - - [01/Jan/2020:00:29:55 +0100] \"GET / HTTP/1.1\" 200 20744\n"
                        "120.29.52.229 - - [01/Jan/2020:00:29:55 +0100] \"GET / HTTP/1.1\" 200 20744\n"
                        "188.27.146.10 - - [01/Jan/2020:00:37:02 +0100] \"GET / HTTP/1.1\" 200 20744\n"
@@ -58,38 +68,26 @@ int main(int argc, char * argv[]) {
                        "61.219.11.153 - - [01/Jan/2020:06:12:19 +0100] \"GET / HTTP/1.1\" 400 -\n"
                        "37.77.69.165 - - [01/Jan/2020:07:10:23 +0100] \"GET / HTTP/1.1\" 200 20744";
 
-    //std::map<std::string, ResultT>  res = mapreduce("/Users/matildepulidori/CLionProjects/Laboratori2020/Laboratorio3-2020/localhost_access_log.2020.txt");
-    std::map<std::string, ResultT>  res = mapreduce(test, mapTime<MapperInputT,ResultT>, reduce<ReducerInputT,ResultT>);
 
-     std::for_each(res.begin(), res.end(), [](std::pair<std::string, ResultT> pair ) ->  void {
+    std::istringstream stream(test);
+    std::vector<std::string> input;
+    std::string line = "";
+    while( std::getline(stream, line) ) {
+        input.push_back(line);
+    }
+    std::map<std::string, ResultT>  res = mapreduce(input, *mapIp<MapperInputT, ResultT>, *reduce<ReducerInputT, ResultT>);
+    */
+
+    std::string path("/Users/matildepulidori/CLionProjects/Laboratori2020/Laboratorio3-2020/localhost_access_log.2020.txt");
+    DriverInputT driver(path);
+
+    std::map<std::string, ResultT>  res = driver.mapreduce( mapIp<MapperInputT,ResultT>, reduce<ReducerInputT, ResultT>);
+
+    std::for_each(res.begin(), res.end(), [](std::pair<std::string, ResultT> pair ) ->  void {
         std::cout<< pair.second.getKey()<< " - " << pair.second.getValue()<< std::endl;
     });
 
     return 0;
 }
 
-
-std::map<std::string, ResultT> mapreduce(
-        std::string input,
-        std::vector<ResultT>(*mapIp) (const MapperInputT& mapper),
-        ResultT(*reduce) (const ReducerInputT& reducer)) {
-
-    std::map<std::string, ResultT> accs;
-
-    std::istringstream stream(input);
-    std::string line = "";
-
-    while( std::getline(stream, line) ){
-        std::vector<ResultT> results;
-        results = mapIp(MapperInputT(line));
-
-        for( ResultT t : results){
-            ReducerInputT r(t.getKey(), t.getValue(), accs[t.getKey()].getValue());
-            ResultT newResult = reduce(ReducerInputT(t.getKey(), t.getValue(), accs[t.getKey()].getValue()));
-            r.serialize();
-            accs[newResult.getKey()] = newResult;
-        }
-    }
-    return accs;
-}
 
