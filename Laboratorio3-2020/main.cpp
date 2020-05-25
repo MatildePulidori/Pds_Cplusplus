@@ -1,15 +1,6 @@
 #include <iostream>
-#include <fstream>
 #include <map>
-#include <sstream>
-#include <boost/property_tree/ptree.hpp>
 #include <boost/property_tree/xml_parser.hpp>
-#include <boost/foreach.hpp>
-#include <string>
-#include <set>
-#include <exception>
-#include <iostream>
-#include <regex>
 #include "MapperInputT.h"
 #include "ReducerInputT.h"
 #include "DriverInputT.h"

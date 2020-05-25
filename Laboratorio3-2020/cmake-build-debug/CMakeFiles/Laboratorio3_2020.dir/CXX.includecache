@@ -6,23 +6,17 @@
 
 #IncludeRegexTransform: 
 
-/Users/matildepulidori/CLionProjects/Laboratori2020/Laboratorio3-2020/MapperInputT.cpp
-fstream
+/Users/matildepulidori/CLionProjects/Laboratori2020/Laboratorio3-2020/ReducerInputT.cpp
+utility
 -
-sstream
--
-regex
--
-MapperInputT.h
-/Users/matildepulidori/CLionProjects/Laboratori2020/Laboratorio3-2020/MapperInputT.h
-
-/Users/matildepulidori/CLionProjects/Laboratori2020/Laboratorio3-2020/MapperInputT.h
 vector
 -
-ResultT.h
-/Users/matildepulidori/CLionProjects/Laboratori2020/Laboratorio3-2020/ResultT.h
+iomanip
+-
+ReducerInputT.h
+/Users/matildepulidori/CLionProjects/Laboratori2020/Laboratorio3-2020/ReducerInputT.h
 
-/Users/matildepulidori/CLionProjects/Laboratori2020/Laboratorio3-2020/ResultT.h
+/Users/matildepulidori/CLionProjects/Laboratori2020/Laboratorio3-2020/ReducerInputT.h
 string
 -
 

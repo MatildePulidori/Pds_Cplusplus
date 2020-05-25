@@ -26,7 +26,6 @@ CMakeFiles/Laboratorio3_2020.dir/main.cpp.o
  /Users/matildepulidori/CLionProjects/Laboratori2020/Laboratorio3-2020/ReducerInputT.h
  /Users/matildepulidori/CLionProjects/Laboratori2020/Laboratorio3-2020/ResultT.h
  /Users/matildepulidori/CLionProjects/Laboratori2020/Laboratorio3-2020/main.cpp
- /usr/local/include/boost/aligned_storage.hpp
  /usr/local/include/boost/any.hpp
  /usr/local/include/boost/archive/archive_exception.hpp
  /usr/local/include/boost/archive/detail/abi_prefix.hpp
@@ -144,7 +143,6 @@ CMakeFiles/Laboratorio3_2020.dir/main.cpp.o
  /usr/local/include/boost/detail/select_type.hpp
  /usr/local/include/boost/detail/workaround.hpp
  /usr/local/include/boost/exception/exception.hpp
- /usr/local/include/boost/foreach.hpp
  /usr/local/include/boost/foreach_fwd.hpp
  /usr/local/include/boost/get_pointer.hpp
  /usr/local/include/boost/integer/static_log2.hpp
@@ -730,23 +728,6 @@ CMakeFiles/Laboratorio3_2020.dir/main.cpp.o
  /usr/local/include/boost/property_tree/stream_translator.hpp
  /usr/local/include/boost/property_tree/string_path.hpp
  /usr/local/include/boost/property_tree/xml_parser.hpp
- /usr/local/include/boost/range/begin.hpp
- /usr/local/include/boost/range/config.hpp
- /usr/local/include/boost/range/const_iterator.hpp
- /usr/local/include/boost/range/detail/begin.hpp
- /usr/local/include/boost/range/detail/common.hpp
- /usr/local/include/boost/range/detail/end.hpp
- /usr/local/include/boost/range/detail/extract_optional_type.hpp
- /usr/local/include/boost/range/detail/implementation_help.hpp
- /usr/local/include/boost/range/detail/msvc_has_iterator_workaround.hpp
- /usr/local/include/boost/range/detail/sfinae.hpp
- /usr/local/include/boost/range/end.hpp
- /usr/local/include/boost/range/iterator.hpp
- /usr/local/include/boost/range/mutable_iterator.hpp
- /usr/local/include/boost/range/range_fwd.hpp
- /usr/local/include/boost/range/rbegin.hpp
- /usr/local/include/boost/range/rend.hpp
- /usr/local/include/boost/range/reverse_iterator.hpp
  /usr/local/include/boost/ref.hpp
  /usr/local/include/boost/serialization/access.hpp
  /usr/local/include/boost/serialization/base_object.hpp
@@ -869,7 +850,6 @@ CMakeFiles/Laboratorio3_2020.dir/main.cpp.o
  /usr/local/include/boost/type_traits/remove_volatile.hpp
  /usr/local/include/boost/type_traits/type_identity.hpp
  /usr/local/include/boost/type_traits/type_with_alignment.hpp
- /usr/local/include/boost/utility/addressof.hpp
  /usr/local/include/boost/utility/base_from_member.hpp
  /usr/local/include/boost/utility/compare_pointees.hpp
  /usr/local/include/boost/utility/declval.hpp

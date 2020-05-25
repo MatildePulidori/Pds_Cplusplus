@@ -9,7 +9,8 @@
 
 MapperInputT::MapperInputT(std::string line): line(std::move(line)) {
     this->parser(this->line);
-    this->serialize();
+    std::vector<char> ser = this->serialize();
+    this->deserialize(ser);
 }
 
 MapperInputT::~MapperInputT() = default;
@@ -67,16 +68,36 @@ std::string MapperInputT::getCode() const {
 
 std::vector<char> MapperInputT::serialize() {
 
-    ushort size = sizeof(std::string);
-    std::vector<char> buff(size+ sizeof(ushort));
-    std::copy((char*)&size, (char*)&size + sizeof(ushort), buff.begin());
-    std::copy((char*)&ip, (char*)&ip + size, buff.begin()+ sizeof(ushort));
+
+    ushort sizeString = sizeof(std::string);
+    ushort sizeTot = sizeString + sizeof(ushort);
+    std::vector<char> buff(sizeTot);
+    std::copy((char*)&sizeString, (char*)&sizeString + sizeof(ushort), buff.begin()); // { <lunghezza attributo ip>
+    std::copy((char*)&ip, (char*)&ip + sizeString, buff.begin()+ sizeof(ushort));// <valore attributo ip>}
 
     return buff;
 }
 
 void MapperInputT::deserialize(std::vector<char> buff) {
-    std::copy(buff.begin()+ sizeof(ushort), buff.begin()+sizeof(std::string), (char*)&this->ip);
+    ushort sizeTot = buff.size();
+
+    ushort position = 0;
+    ushort toAdd = sizeof(ushort);
+    ushort toAddNext = 0;
+
+
+    while (position <= sizeTot) {
+
+        if(toAdd == sizeof(ushort)) {
+            std::copy(buff.begin() + position, buff.begin() + position + toAdd, (char *) &toAddNext);
+        } else {
+            std::copy(buff.begin() + position, buff.begin() + position + toAdd, (char *) &this->ip);
+        }
+        position +=toAdd;
+        toAdd += toAddNext;
+    }
+
+
 }
 
 

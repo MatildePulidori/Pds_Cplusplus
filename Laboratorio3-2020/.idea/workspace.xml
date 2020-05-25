@@ -12,35 +12,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d622828b-556c-47be-a7e6-b605a3f471db" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/DriverInputT.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DriverInputT.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DriverInputT.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/DriverInputT.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DriverInputT.h" beforeDir="false" afterPath="$PROJECT_DIR$/DriverInputT.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Esercitazione3.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/Esercitazione3.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MapperInputT.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/MapperInputT.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MapperInputT.h" beforeDir="false" afterPath="$PROJECT_DIR$/MapperInputT.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ReducerInputT.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/ReducerInputT.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReducerInputT.h" beforeDir="false" afterPath="$PROJECT_DIR$/ReducerInputT.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ResultT.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/ResultT.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResultT.h" beforeDir="false" afterPath="$PROJECT_DIR$/ResultT.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Serializer.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Serializer.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Laboratorio3_2020.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Laboratorio3_2020.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Laboratorio3_2020.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Laboratorio3_2020.dir/DependInfo.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Laboratorio3_2020.dir/MapperInputT.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Laboratorio3_2020.dir/MapperInputT.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Laboratorio3_2020.dir/ReducerInputT.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Laboratorio3_2020.dir/ReducerInputT.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Laboratorio3_2020.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Laboratorio3_2020.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Laboratorio3_2020.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Laboratorio3_2020.dir/cmake_clean.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Laboratorio3_2020.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Laboratorio3_2020.dir/depend.internal" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Laboratorio3_2020.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Laboratorio3_2020.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Laboratorio3_2020.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Laboratorio3_2020.dir/flags.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Laboratorio3_2020.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Laboratorio3_2020.dir/link.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Laboratorio3_2020.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Laboratorio3_2020.dir/main.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Laboratorio3_2020" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Laboratorio3_2020" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Laboratorio3_2020.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Laboratorio3_2020.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -116,7 +101,7 @@
       <workItem from="1590057538813" duration="5942000" />
       <workItem from="1590080606107" duration="16000" />
       <workItem from="1590174848756" duration="11000" />
-      <workItem from="1590329165857" duration="11938000" />
+      <workItem from="1590329165857" duration="18820000" />
     </task>
     <servers />
   </component>
@@ -139,20 +124,35 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+        <line-breakpoint type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/main.cpp</url>
-          <line>15</line>
+          <line>6</line>
           <option name="timeStamp" value="9" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+        <line-breakpoint type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/ReducerInputT.cpp</url>
+          <line>52</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/MapperInputT.cpp</url>
-          <line>37</line>
-          <option name="timeStamp" value="14" />
+          <line>77</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/ResultT.cpp</url>
+          <line>35</line>
+          <option name="timeStamp" value="19" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/MapperInputT.cpp</url>
-          <line>69</line>
-          <option name="timeStamp" value="15" />
+          <url>file://$PROJECT_DIR$/ReducerInputT.cpp</url>
+          <line>68</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/ReducerInputT.cpp</url>
+          <line>12</line>
+          <option name="timeStamp" value="25" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
