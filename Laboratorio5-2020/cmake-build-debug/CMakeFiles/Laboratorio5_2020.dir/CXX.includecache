@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/matildepulidori/CLionProjects/Laboratori2020/Laboratorio5-2020/Server.h
+list
+-
+queue
+-
+sys/socket.h
+-
+string
+-
+system_error
+-
+Socket.h
+/Users/matildepulidori/CLionProjects/Laboratori2020/Laboratorio5-2020/Socket.h
+
+/Users/matildepulidori/CLionProjects/Laboratori2020/Laboratorio5-2020/Socket.h
+sys/socket.h
+-
+system_error
+-
+netinet/in.h
+-
+netdb.h
+-
+unistd.h
+-
+
+/Users/matildepulidori/CLionProjects/Laboratori2020/Laboratorio5-2020/main.cpp
+iostream
+-
+Server.h
+/Users/matildepulidori/CLionProjects/Laboratori2020/Laboratorio5-2020/Server.h
+

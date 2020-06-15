@@ -1,0 +1,1 @@
+/Library/Developer/CommandLineTools/usr/bin/c++  -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/Laboratorio5_2020.dir/main.cpp.o CMakeFiles/Laboratorio5_2020.dir/Client.cpp.o CMakeFiles/Laboratorio5_2020.dir/Server.cpp.o CMakeFiles/Laboratorio5_2020.dir/Socket.cpp.o  -o Laboratorio5_2020 
