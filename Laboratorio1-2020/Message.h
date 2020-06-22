@@ -19,12 +19,14 @@ private:
     char *data;
     int size;
 
-    char* mkMessage(int n);
+    static int id_count;
+    static char* mkMessage(int n);
 
 
 
 public:
 
+    Message();
     Message(int size);
     ~Message();
     Message(const Message& source);
@@ -46,7 +48,6 @@ public:
     char* getData() const;
     int getSize() const;
 
-    Message();
 };
 
 

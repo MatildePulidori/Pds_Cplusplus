@@ -15,6 +15,10 @@ class MessageStore {
     int dim = 0;
     int n;
 
+
+    void reallocate(int size);
+    int find_pos(long id);
+
 public:
     MessageStore(int n);
     ~MessageStore();
@@ -26,6 +30,7 @@ public:
     bool remove(long id);
     std::tuple<int, int> stats();
     void compact();
+    int getDim() const;
 
 
 };

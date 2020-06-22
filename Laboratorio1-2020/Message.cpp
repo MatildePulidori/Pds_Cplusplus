@@ -7,85 +7,7 @@
 #include <algorithm>
 
 
-static long id_count = 0;
-
-/**
- * Costruttore di default
- */
-Message::Message(): id(-1), size(0){
-    data = std::move(mkMessage(this->size)) ;
-
-}
-
-/**
- * Costruttore
- * @param id
- * @param data
- * @param size
- */
-Message::Message(int size): id(id_count++), size(size){
-        data = std::move(this->mkMessage(size));
-        std::cout<<"costruttore param Message "<<&data <<std::endl;
-}
-
-
-/**
- * Distruttore
- */
-Message::~Message() {
-    std::cout<<"distruttore Message: "<< &data<<std::endl;
-    delete[] data;
-    data=NULL;
-
-}
-
-
-/**
- * Costruttore di copia
- * @param source
- */
-Message::Message(const Message& source): id(source.id), size(source.size){
-    this->data = source.data;
-    memcpy(this->data, source.data, size);
-}
-
-/**
- * Operatore di assegnazione
- * @param source
- * @return
- */
-Message& Message::operator=(const Message &source) {
-    if (this != &source) {
-        delete[] this->data;
-        this->data = nullptr;
-        this->id = source.id;
-        this->size = source.size;
-        this->data = new char[this->size];
-        memcpy(this->data, source.data, this->size);
-    }
-    return *this;
-}
-
-/**
- * Costruttore di movimento
- * @param source
- * @return
- */
-Message::Message(Message &&source): id(-1), size(0), data(NULL) {
-    swap(*this, source);
-}
-
-
-/**
- * Operatore di movimento
- * @param source
- * @return
- */
-Message& Message::operator=(Message &&source) {
-    swap(*this, source);
-    return *this;
-}
-
+int Message::id_count = 0;
 
 char* Message::mkMessage(int n) {
     std::string vowels = "aeiou";
@@ -99,6 +21,92 @@ char* Message::mkMessage(int n) {
     m[n] = 0;
 
     return m;
+}
+
+/**
+ * Costruttore di default
+ */
+Message::Message(): id(-1), data(nullptr), size(0){}
+
+/**
+ * Costruttore
+ * @param id
+ * @param data
+ * @param size
+ */
+Message::Message(int size): id(id_count++), size(size){
+    data = std::move(this->mkMessage(size));
+    std::cout<<"costruttore Message "<< this->id<<": "<<&data <<std::endl;
+}
+
+
+/**
+ * Distruttore
+ */
+Message::~Message() {
+    std::cout<<"distruttore Message "<< this->id<<": "<< &data<<std::endl;
+    if(data != nullptr)
+        delete[] data;
+
+}
+
+
+/**
+ * Costruttore di copia
+ * @param source
+ */
+Message::Message(const Message& source){
+    this->id = source.id;
+    this->size = source.size;
+    this->data = source.data;
+    std::copy( source.data, source.data+source.size, this->data);
+}
+
+/**
+ * Costruttore di movimento
+ * @param source
+ * @return
+ */
+Message::Message(Message &&source){
+    this->id = source.id;
+    this->size = source.size;
+    this->data = source.data;
+    source.data = nullptr;
+}
+
+/**
+ * Operatore di assegnazione
+ * @param source
+ * @return
+ */
+Message& Message::operator=(const Message &source) {
+    if (this != &source) {
+        delete[] this->data;
+        this->data = nullptr;
+        this->id = source.id;
+        this->size = source.size;
+        this->data = new char[this->size+1];
+        std::copy(source.data, source.data+source.size, this->data);
+    }
+    return *this;
+}
+
+
+/**
+ * Operatore di movimento
+ * @param source
+ * @return
+ */
+Message& Message::operator=(Message &&source) {
+    if (this != &source) {
+        delete[] this->data;
+        this->data = nullptr;
+        this->id = source.id;
+        this->size = source.size;
+        this->data = source.data;
+        source.data = nullptr;
+    }
+    return *this;
 }
 
 long Message::getId() const{

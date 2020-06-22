@@ -11,7 +11,32 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2477b815-60ea-4126-9a8a-3c5042add47e" name="Default Changelist" comment="" />
+    <list default="true" id="2477b815-60ea-4126-9a8a-3c5042add47e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Laboratorio4-2020/.idea/Laboratorio4-2020.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Laboratorio4-2020/Data.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Laboratorio4-2020/Data.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Laboratorio4-2020/Jobs.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Laboratorio4-2020/Jobs.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Laboratorio4-2020/a.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Laboratorio4-2020/b.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Laboratorio4-2020/c.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../soluzioni/esercitazione1/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../soluzioni/esercitazione1/.idea/esercitazione1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../soluzioni/esercitazione1/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../soluzioni/esercitazione1/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../soluzioni/esercitazione1/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Esercitazione1.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/Esercitazione1.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Message.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Message.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Message.h" beforeDir="false" afterPath="$PROJECT_DIR$/Message.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MessageStore.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/MessageStore.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MessageStore.h" beforeDir="false" afterPath="$PROJECT_DIR$/MessageStore.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Laboratorio1_2020" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Laboratorio1_2020" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Laboratorio3-2020/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Laboratorio3-2020/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Laboratorio4-2020/Esercitazione4.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../Laboratorio4-2020/Esercitazione4.pdf" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,8 +47,14 @@
     <option name="formatViaClangd" value="false" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectId" id="1ZqUq9I2ka1r2OkAUc1XwInl9hT" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -60,36 +91,22 @@
       <updated>1585566305873</updated>
       <workItem from="1585566307391" duration="10840000" />
       <workItem from="1585661487483" duration="9391000" />
+      <workItem from="1592582757936" duration="4248000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/main.cpp</url>
-          <line>34</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/main.cpp</url>
-          <line>30</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/MessageStore.cpp</url>
-          <line>100</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/main.cpp</url>
-          <line>26</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
