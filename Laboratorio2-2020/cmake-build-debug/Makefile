@@ -150,6 +150,33 @@ Base.cpp.s:
 	$(MAKE) -f CMakeFiles/Laboratorio2_2020.dir/build.make CMakeFiles/Laboratorio2_2020.dir/Base.cpp.s
 .PHONY : Base.cpp.s
 
+Base2.o: Base2.cpp.o
+
+.PHONY : Base2.o
+
+# target to build an object file
+Base2.cpp.o:
+	$(MAKE) -f CMakeFiles/Laboratorio2_2020.dir/build.make CMakeFiles/Laboratorio2_2020.dir/Base2.cpp.o
+.PHONY : Base2.cpp.o
+
+Base2.i: Base2.cpp.i
+
+.PHONY : Base2.i
+
+# target to preprocess a source file
+Base2.cpp.i:
+	$(MAKE) -f CMakeFiles/Laboratorio2_2020.dir/build.make CMakeFiles/Laboratorio2_2020.dir/Base2.cpp.i
+.PHONY : Base2.cpp.i
+
+Base2.s: Base2.cpp.s
+
+.PHONY : Base2.s
+
+# target to generate assembly for a file
+Base2.cpp.s:
+	$(MAKE) -f CMakeFiles/Laboratorio2_2020.dir/build.make CMakeFiles/Laboratorio2_2020.dir/Base2.cpp.s
+.PHONY : Base2.cpp.s
+
 Directory.o: Directory.cpp.o
 
 .PHONY : Directory.o
@@ -177,6 +204,33 @@ Directory.cpp.s:
 	$(MAKE) -f CMakeFiles/Laboratorio2_2020.dir/build.make CMakeFiles/Laboratorio2_2020.dir/Directory.cpp.s
 .PHONY : Directory.cpp.s
 
+Directory2.o: Directory2.cpp.o
+
+.PHONY : Directory2.o
+
+# target to build an object file
+Directory2.cpp.o:
+	$(MAKE) -f CMakeFiles/Laboratorio2_2020.dir/build.make CMakeFiles/Laboratorio2_2020.dir/Directory2.cpp.o
+.PHONY : Directory2.cpp.o
+
+Directory2.i: Directory2.cpp.i
+
+.PHONY : Directory2.i
+
+# target to preprocess a source file
+Directory2.cpp.i:
+	$(MAKE) -f CMakeFiles/Laboratorio2_2020.dir/build.make CMakeFiles/Laboratorio2_2020.dir/Directory2.cpp.i
+.PHONY : Directory2.cpp.i
+
+Directory2.s: Directory2.cpp.s
+
+.PHONY : Directory2.s
+
+# target to generate assembly for a file
+Directory2.cpp.s:
+	$(MAKE) -f CMakeFiles/Laboratorio2_2020.dir/build.make CMakeFiles/Laboratorio2_2020.dir/Directory2.cpp.s
+.PHONY : Directory2.cpp.s
+
 File.o: File.cpp.o
 
 .PHONY : File.o
@@ -203,6 +257,33 @@ File.s: File.cpp.s
 File.cpp.s:
 	$(MAKE) -f CMakeFiles/Laboratorio2_2020.dir/build.make CMakeFiles/Laboratorio2_2020.dir/File.cpp.s
 .PHONY : File.cpp.s
+
+File2.o: File2.cpp.o
+
+.PHONY : File2.o
+
+# target to build an object file
+File2.cpp.o:
+	$(MAKE) -f CMakeFiles/Laboratorio2_2020.dir/build.make CMakeFiles/Laboratorio2_2020.dir/File2.cpp.o
+.PHONY : File2.cpp.o
+
+File2.i: File2.cpp.i
+
+.PHONY : File2.i
+
+# target to preprocess a source file
+File2.cpp.i:
+	$(MAKE) -f CMakeFiles/Laboratorio2_2020.dir/build.make CMakeFiles/Laboratorio2_2020.dir/File2.cpp.i
+.PHONY : File2.cpp.i
+
+File2.s: File2.cpp.s
+
+.PHONY : File2.s
+
+# target to generate assembly for a file
+File2.cpp.s:
+	$(MAKE) -f CMakeFiles/Laboratorio2_2020.dir/build.make CMakeFiles/Laboratorio2_2020.dir/File2.cpp.s
+.PHONY : File2.cpp.s
 
 main.o: main.cpp.o
 
@@ -243,12 +324,21 @@ help:
 	@echo "... Base.o"
 	@echo "... Base.i"
 	@echo "... Base.s"
+	@echo "... Base2.o"
+	@echo "... Base2.i"
+	@echo "... Base2.s"
 	@echo "... Directory.o"
 	@echo "... Directory.i"
 	@echo "... Directory.s"
+	@echo "... Directory2.o"
+	@echo "... Directory2.i"
+	@echo "... Directory2.s"
 	@echo "... File.o"
 	@echo "... File.i"
 	@echo "... File.s"
+	@echo "... File2.o"
+	@echo "... File2.i"
+	@echo "... File2.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

@@ -126,11 +126,9 @@ std::shared_ptr<Directory> Directory::addDirectory(std::string nome) {
 
 
 std::shared_ptr<Directory> Directory::makeDir(std::string nome, std::weak_ptr<Directory> parent) {
-
-    Directory *dir = new Directory(nome);
-    std::shared_ptr<Directory> newDir (dir);
-    dir->mySelf = std::weak_ptr<Directory>(newDir);
-    dir->parent = parent;
+    std::shared_ptr<Directory> newDir (new Directory(nome));
+    newDir->mySelf = std::weak_ptr<Directory>(newDir);
+    newDir->parent = parent;
 
     return newDir;
 

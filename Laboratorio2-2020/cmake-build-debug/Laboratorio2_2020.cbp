@@ -86,16 +86,34 @@
 		<Unit filename="/Users/matildepulidori/CLionProjects/Laboratori2020/Laboratorio2-2020/Base.h">
 			<Option target="Laboratorio2_2020"/>
 		</Unit>
+		<Unit filename="/Users/matildepulidori/CLionProjects/Laboratori2020/Laboratorio2-2020/Base2.cpp">
+			<Option target="Laboratorio2_2020"/>
+		</Unit>
+		<Unit filename="/Users/matildepulidori/CLionProjects/Laboratori2020/Laboratorio2-2020/Base2.h">
+			<Option target="Laboratorio2_2020"/>
+		</Unit>
 		<Unit filename="/Users/matildepulidori/CLionProjects/Laboratori2020/Laboratorio2-2020/Directory.cpp">
 			<Option target="Laboratorio2_2020"/>
 		</Unit>
 		<Unit filename="/Users/matildepulidori/CLionProjects/Laboratori2020/Laboratorio2-2020/Directory.h">
 			<Option target="Laboratorio2_2020"/>
 		</Unit>
+		<Unit filename="/Users/matildepulidori/CLionProjects/Laboratori2020/Laboratorio2-2020/Directory2.cpp">
+			<Option target="Laboratorio2_2020"/>
+		</Unit>
+		<Unit filename="/Users/matildepulidori/CLionProjects/Laboratori2020/Laboratorio2-2020/Directory2.h">
+			<Option target="Laboratorio2_2020"/>
+		</Unit>
 		<Unit filename="/Users/matildepulidori/CLionProjects/Laboratori2020/Laboratorio2-2020/File.cpp">
 			<Option target="Laboratorio2_2020"/>
 		</Unit>
 		<Unit filename="/Users/matildepulidori/CLionProjects/Laboratori2020/Laboratorio2-2020/File.h">
+			<Option target="Laboratorio2_2020"/>
+		</Unit>
+		<Unit filename="/Users/matildepulidori/CLionProjects/Laboratori2020/Laboratorio2-2020/File2.cpp">
+			<Option target="Laboratorio2_2020"/>
+		</Unit>
+		<Unit filename="/Users/matildepulidori/CLionProjects/Laboratori2020/Laboratorio2-2020/File2.h">
 			<Option target="Laboratorio2_2020"/>
 		</Unit>
 		<Unit filename="/Users/matildepulidori/CLionProjects/Laboratori2020/Laboratorio2-2020/main.cpp">

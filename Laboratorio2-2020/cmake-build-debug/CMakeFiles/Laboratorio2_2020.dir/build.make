@@ -83,9 +83,22 @@ CMakeFiles/Laboratorio2_2020.dir/Base.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Laboratorio2_2020.dir/Base.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/matildepulidori/CLionProjects/Laboratori2020/Laboratorio2-2020/Base.cpp -o CMakeFiles/Laboratorio2_2020.dir/Base.cpp.s
 
+CMakeFiles/Laboratorio2_2020.dir/Base2.cpp.o: CMakeFiles/Laboratorio2_2020.dir/flags.make
+CMakeFiles/Laboratorio2_2020.dir/Base2.cpp.o: ../Base2.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/matildepulidori/CLionProjects/Laboratori2020/Laboratorio2-2020/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Laboratorio2_2020.dir/Base2.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Laboratorio2_2020.dir/Base2.cpp.o -c /Users/matildepulidori/CLionProjects/Laboratori2020/Laboratorio2-2020/Base2.cpp
+
+CMakeFiles/Laboratorio2_2020.dir/Base2.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Laboratorio2_2020.dir/Base2.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/matildepulidori/CLionProjects/Laboratori2020/Laboratorio2-2020/Base2.cpp > CMakeFiles/Laboratorio2_2020.dir/Base2.cpp.i
+
+CMakeFiles/Laboratorio2_2020.dir/Base2.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Laboratorio2_2020.dir/Base2.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/matildepulidori/CLionProjects/Laboratori2020/Laboratorio2-2020/Base2.cpp -o CMakeFiles/Laboratorio2_2020.dir/Base2.cpp.s
+
 CMakeFiles/Laboratorio2_2020.dir/Directory.cpp.o: CMakeFiles/Laboratorio2_2020.dir/flags.make
 CMakeFiles/Laboratorio2_2020.dir/Directory.cpp.o: ../Directory.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/matildepulidori/CLionProjects/Laboratori2020/Laboratorio2-2020/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Laboratorio2_2020.dir/Directory.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/matildepulidori/CLionProjects/Laboratori2020/Laboratorio2-2020/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Laboratorio2_2020.dir/Directory.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Laboratorio2_2020.dir/Directory.cpp.o -c /Users/matildepulidori/CLionProjects/Laboratori2020/Laboratorio2-2020/Directory.cpp
 
 CMakeFiles/Laboratorio2_2020.dir/Directory.cpp.i: cmake_force
@@ -96,9 +109,22 @@ CMakeFiles/Laboratorio2_2020.dir/Directory.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Laboratorio2_2020.dir/Directory.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/matildepulidori/CLionProjects/Laboratori2020/Laboratorio2-2020/Directory.cpp -o CMakeFiles/Laboratorio2_2020.dir/Directory.cpp.s
 
+CMakeFiles/Laboratorio2_2020.dir/Directory2.cpp.o: CMakeFiles/Laboratorio2_2020.dir/flags.make
+CMakeFiles/Laboratorio2_2020.dir/Directory2.cpp.o: ../Directory2.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/matildepulidori/CLionProjects/Laboratori2020/Laboratorio2-2020/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Laboratorio2_2020.dir/Directory2.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Laboratorio2_2020.dir/Directory2.cpp.o -c /Users/matildepulidori/CLionProjects/Laboratori2020/Laboratorio2-2020/Directory2.cpp
+
+CMakeFiles/Laboratorio2_2020.dir/Directory2.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Laboratorio2_2020.dir/Directory2.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/matildepulidori/CLionProjects/Laboratori2020/Laboratorio2-2020/Directory2.cpp > CMakeFiles/Laboratorio2_2020.dir/Directory2.cpp.i
+
+CMakeFiles/Laboratorio2_2020.dir/Directory2.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Laboratorio2_2020.dir/Directory2.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/matildepulidori/CLionProjects/Laboratori2020/Laboratorio2-2020/Directory2.cpp -o CMakeFiles/Laboratorio2_2020.dir/Directory2.cpp.s
+
 CMakeFiles/Laboratorio2_2020.dir/File.cpp.o: CMakeFiles/Laboratorio2_2020.dir/flags.make
 CMakeFiles/Laboratorio2_2020.dir/File.cpp.o: ../File.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/matildepulidori/CLionProjects/Laboratori2020/Laboratorio2-2020/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Laboratorio2_2020.dir/File.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/matildepulidori/CLionProjects/Laboratori2020/Laboratorio2-2020/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Laboratorio2_2020.dir/File.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Laboratorio2_2020.dir/File.cpp.o -c /Users/matildepulidori/CLionProjects/Laboratori2020/Laboratorio2-2020/File.cpp
 
 CMakeFiles/Laboratorio2_2020.dir/File.cpp.i: cmake_force
@@ -109,23 +135,42 @@ CMakeFiles/Laboratorio2_2020.dir/File.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Laboratorio2_2020.dir/File.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/matildepulidori/CLionProjects/Laboratori2020/Laboratorio2-2020/File.cpp -o CMakeFiles/Laboratorio2_2020.dir/File.cpp.s
 
+CMakeFiles/Laboratorio2_2020.dir/File2.cpp.o: CMakeFiles/Laboratorio2_2020.dir/flags.make
+CMakeFiles/Laboratorio2_2020.dir/File2.cpp.o: ../File2.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/matildepulidori/CLionProjects/Laboratori2020/Laboratorio2-2020/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Laboratorio2_2020.dir/File2.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Laboratorio2_2020.dir/File2.cpp.o -c /Users/matildepulidori/CLionProjects/Laboratori2020/Laboratorio2-2020/File2.cpp
+
+CMakeFiles/Laboratorio2_2020.dir/File2.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Laboratorio2_2020.dir/File2.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/matildepulidori/CLionProjects/Laboratori2020/Laboratorio2-2020/File2.cpp > CMakeFiles/Laboratorio2_2020.dir/File2.cpp.i
+
+CMakeFiles/Laboratorio2_2020.dir/File2.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Laboratorio2_2020.dir/File2.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/matildepulidori/CLionProjects/Laboratori2020/Laboratorio2-2020/File2.cpp -o CMakeFiles/Laboratorio2_2020.dir/File2.cpp.s
+
 # Object files for target Laboratorio2_2020
 Laboratorio2_2020_OBJECTS = \
 "CMakeFiles/Laboratorio2_2020.dir/main.cpp.o" \
 "CMakeFiles/Laboratorio2_2020.dir/Base.cpp.o" \
+"CMakeFiles/Laboratorio2_2020.dir/Base2.cpp.o" \
 "CMakeFiles/Laboratorio2_2020.dir/Directory.cpp.o" \
-"CMakeFiles/Laboratorio2_2020.dir/File.cpp.o"
+"CMakeFiles/Laboratorio2_2020.dir/Directory2.cpp.o" \
+"CMakeFiles/Laboratorio2_2020.dir/File.cpp.o" \
+"CMakeFiles/Laboratorio2_2020.dir/File2.cpp.o"
 
 # External object files for target Laboratorio2_2020
 Laboratorio2_2020_EXTERNAL_OBJECTS =
 
 Laboratorio2_2020: CMakeFiles/Laboratorio2_2020.dir/main.cpp.o
 Laboratorio2_2020: CMakeFiles/Laboratorio2_2020.dir/Base.cpp.o
+Laboratorio2_2020: CMakeFiles/Laboratorio2_2020.dir/Base2.cpp.o
 Laboratorio2_2020: CMakeFiles/Laboratorio2_2020.dir/Directory.cpp.o
+Laboratorio2_2020: CMakeFiles/Laboratorio2_2020.dir/Directory2.cpp.o
 Laboratorio2_2020: CMakeFiles/Laboratorio2_2020.dir/File.cpp.o
+Laboratorio2_2020: CMakeFiles/Laboratorio2_2020.dir/File2.cpp.o
 Laboratorio2_2020: CMakeFiles/Laboratorio2_2020.dir/build.make
 Laboratorio2_2020: CMakeFiles/Laboratorio2_2020.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/matildepulidori/CLionProjects/Laboratori2020/Laboratorio2-2020/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable Laboratorio2_2020"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/matildepulidori/CLionProjects/Laboratori2020/Laboratorio2-2020/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable Laboratorio2_2020"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Laboratorio2_2020.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

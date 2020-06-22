@@ -12,6 +12,16 @@ string
 iostream
 -
 
+/Users/matildepulidori/CLionProjects/Laboratori2020/Laboratorio2-2020/Base2.h
+string
+-
+
+/Users/matildepulidori/CLionProjects/Laboratori2020/Laboratorio2-2020/D.h
+memory
+-
+iostream
+-
+
 /Users/matildepulidori/CLionProjects/Laboratori2020/Laboratorio2-2020/Directory.h
 string
 -
@@ -22,13 +32,31 @@ Base.h
 File.h
 /Users/matildepulidori/CLionProjects/Laboratori2020/Laboratorio2-2020/File.h
 
+/Users/matildepulidori/CLionProjects/Laboratori2020/Laboratorio2-2020/Directory2.h
+string
+-
+vector
+-
+Base2.h
+/Users/matildepulidori/CLionProjects/Laboratori2020/Laboratorio2-2020/Base2.h
+File2.h
+/Users/matildepulidori/CLionProjects/Laboratori2020/Laboratorio2-2020/File2.h
+
 /Users/matildepulidori/CLionProjects/Laboratori2020/Laboratorio2-2020/File.h
 Base.h
 /Users/matildepulidori/CLionProjects/Laboratori2020/Laboratorio2-2020/Base.h
+
+/Users/matildepulidori/CLionProjects/Laboratori2020/Laboratorio2-2020/File2.h
+Base2.h
+/Users/matildepulidori/CLionProjects/Laboratori2020/Laboratorio2-2020/Base2.h
 
 /Users/matildepulidori/CLionProjects/Laboratori2020/Laboratorio2-2020/main.cpp
 iostream
 -
 Directory.h
 /Users/matildepulidori/CLionProjects/Laboratori2020/Laboratorio2-2020/Directory.h
+D.h
+/Users/matildepulidori/CLionProjects/Laboratori2020/Laboratorio2-2020/D.h
+Directory2.h
+/Users/matildepulidori/CLionProjects/Laboratori2020/Laboratorio2-2020/Directory2.h
 
