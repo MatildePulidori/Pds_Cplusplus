@@ -1,7 +1,9 @@
 #include <iostream>
+#include <filesystem>
 #include "Directory.h"
 #include "D.h"
 #include "Directory2.h"
+
 
 void test0(){
     D root(std::shared_ptr<D>(nullptr));
@@ -19,7 +21,6 @@ void test1(){
     beta->addFile("file2", 50);
     gamma->addDirectory("epsilon");
     gamma->addFile("file3", 12);
-
 
     std::cout<<"ls di "<<root.get()->getName()<<": "<<std::endl;
     root->ls(0);
@@ -63,11 +64,14 @@ void test2() {
     if (dirToFind == nullptr) std::cout<< "non esiste questa directory "<< dirName;
     else std::cout<<dirToFind->getName();
     std::cout<<std::endl;
+
 }
 
 
 int main() {
 
     test2();
+    std::filesystem::path p = std::filesystem::current_path();
+    std::cout<< p<<std::endl;
     return 0;
 }
